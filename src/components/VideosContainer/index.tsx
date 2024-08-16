@@ -1,8 +1,7 @@
 
-import { trpc } from "@/utils/trpc"
-import GridVideoContainer from "./GridVideoContainer"
-import { useEffect } from "react"
-import Loading from "@/pages/loading"
+import { trpc } from "@/utils/trpc";
+import GridVideoContainer from "./GridVideoContainer";
+import Loading from "@/app/loading";
 
 export default function VideosContainer() {
     const { isPending, data } = trpc.video.list.useQuery()
