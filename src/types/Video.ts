@@ -1,0 +1,1 @@
+export type Video = {Id: number, Title: string, Image: string, URL: string, Likes: number, Views: number }
