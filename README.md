@@ -1,8 +1,6 @@
-# Prueba técnica Junior
-
 # Technical Test
 
-Create a video watch player
+Video watch player
 
 ## Technologies Used
 
@@ -12,7 +10,30 @@ Create a video watch player
 - tRPC (@trpc/server for backend & @trpc/client for frontend) [https://trpc.io/]
 - Typescript
 
-## Requirements
+## Getting Started
+
+First, run the development server:
+
+```bash
+npm install
+
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
+
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+To test the different endpoints, you should navigate between the different urls.
+1. In the first page (http://localhost:300), we have the list of videos presented in a grid to improve the UX. In this page you will be able to see a simple navigation bar(menu), to allow you to go to the start of this page.
+If you click in the image of the video that you want to watch, you will navigate directly to the second page, the video player.
+2. In the second page, you will be able to watch the video and see the information(name, views and likes), plus the views number is going to increment each time you click and access each video in the video player.
+You will see a button Go Back to return to the video list page. You can also return by the navbar.
+
 
 ### Functional Requirements
 
@@ -33,29 +54,11 @@ Create a video watch player
 - Use server actions to handle server side requests
 - Use Next.js app native routing to navigate between pages and components.
 - Implement error handling and loading states for API calls.
-- Write simple documentation in a [README.md](http://readme.md/) file, explaining how to set up and run the application locally.
 
 ### Bonus points
 
 - Good design
-- Video player like count
-- Advanced controls on the video player (speed, timeline, full screen, etc)
 
-## Expected Deliverables
-
-### Minimum
-
-- A repository with a Next.js application that meets the functional requirements.
-- A [README.md](http://readme.md/) file describing the setup instructions, how to run the app, and how to test the API calls.
-
-### Evaluation Criteria
-
-- Code quality and readability
-- Proper use of React and Next.js features (e.g., server-side rendering, data fetching).
-- Component design and reusability.
-- Styling accuracy and use of TailwindCSS classes.
-- Effective use of tRPC for type-safe APIs.
-- Ease of setup and completeness of documentation.
 
 
 
@@ -79,7 +82,7 @@ bun dev
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+You
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
